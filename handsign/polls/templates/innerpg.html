@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b67f87f57a.js" crossorigin="anonymous"></script>
+    <link href="../static/inner.css" rel="stylesheet">
+</head>
+<body style="background-color: #6433FF;">
+    <div class="header" style="background-color:#6433FF;">
+        <nav class="navbar navbar-expand-lg py-3 sticky-top ">
+            <div class="container">
+                <a class="navbar-brand" href="/new.html" style="color: white;">
+                    <img class="logo2" src="../static/5.png">
+                </a>
+                <a class="navbar-brand" href="#" style="color: white ; margin-top: 10px;">
+                    <h2>Sign lang</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new.html#About">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new.html#con">Contact</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---3 box start-->
+    <section id="section">
+        <div class="container">
+            <div class="row">
+                <!---Alphabet window start-->
+                <div class="col-lg-4 num">
+                    <div class="alpha card-effect">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-a"></i>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <i class="fa-solid fa-z"></i>
+                        </div>
+                        <h5 class="mt-4 mb-2" style="color: black;">Alphabets</h5>
+                        <p style="color: gray">In this Window you can predit only Alaphabets from A to Z.</p>
+                        <form action="{% url 'appStart' %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary">
+                                <h5>start <i class="fa-solid fa-arrow-right-long"></i></h5>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+                <!---Alphabet window end-->
+                <!---number window start-->
+                <div class="col-lg-4">
+                    <div class="alpha card-effect">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-0"></i><br>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <i class="fa-solid fa-9"></i>
+                        </div>
+                        <h5 class="mt-4 mb-2" style="color: black;">Numbers</h5>
+                        <p style="color: gray">In this Window you can predit only Numbers from 0 to 9.</p>
+                        <form action="{% url 'appStart1' %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary">
+                                <h5>start <i class="fa-solid fa-arrow-right-long"></i></h5>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!---number window end-->
+                <!---Word window start-->
+                <div class="col-lg-4">
+                    <div class="alpha card-effect">
+                        <div class="iconbox">
+                            <i class="fa-brands fa-wordpress-simple"></i>
+                        </div>
+                        <h5 class="mt-4 mb-2" style="color: black;">Words</h5>
+                        <p style="color: gray">In this Window you can predit only few selected Words.</p>
+                        <button type="button" class="btn btn-primary">
+                            <h5>start <i class="fa-solid fa-arrow-right-long"></i></h5>
+                        </button>
+                    </div>
+                </div>
+                <!---word window end-->
+
+            </div>
+
+        </div>
+    </section>
+    <!---Alphabet window end-->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1><u>How It Works :</u></h1><br>
+
+                    <h3><b>Step 1 :-</b></h3>
+                    <p style="color:white;">In this window as you can see we provided you with the three section 1.Alphabets detection
+                        2.Numbers detection 3.Words detection. Click on any window that you like.</p>
+                    <h3><b>Step 2 :-</b></h3>
+                    <p style="color:white;">After click on start button then you go the next page, where you see two window one with
+                        color
+                        image window and another one with gray filter window. color image window is for normal use
+                        and
+                        gray is for sign detection.</p>
+                    <h3><b>Step 3 :-</b></h3>
+                    <p style="color:white;">For sign lang detection you should get clear background especially for gray filter window, so
+                        that it will get your hand image and detect properly. </p>
+                    <h3><b>Step 4 :-</b></h3>
+                    <p style="color:white;">For detection place your any hand on gray filter window. Make sure that you can only show the
+                        hand
+                        upto your wrist to gray filter window, so that it can see your hand properly.</p>
+                    <h3><b>Step 5 :-</b></h3>
+                    <p style="color:white;">When you are showing your hand to gray filter window hold the hand in same positin for 10 to
+                        15
+                        sec, so that you can get proper prediction. Same procedure is applied for all the window.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></scrip>
+
+</body>
+
+</html>

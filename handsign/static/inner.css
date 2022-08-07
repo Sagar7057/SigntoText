@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap');
+
+:root {
+    --primary: #33FFDA;
+    --dark: white;
+
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+
+
+body{
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h4,h5,h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.navbar .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.navbar{
+    margin-bottom: 0px;
+    box-shadow: var(--box-shadow);
+}
+
+.btn {
+    padding: 14px 18px;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #33FFDA;
+    padding-left: 10px;
+    
+
+}
+
+
+.hero{
+    background-color: #6433FF;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.logo2{
+
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.side{
+
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-left: 650px;
+    margin-top: -450px;
+}
+.b1{
+    margin-left: 20px;
+}
+
+.para{
+    color: #F2F4F4; 
+}
+
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    padding: 25px;
+    transition: all 0.35s ease;
+    border-radius: 15px;
+}
+
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.card-effect::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    background: rgb(43, 42,42);
+    width: 90%;
+    height: 4px;
+    left: 3%;
+    border-radius: 50%;
+    
+}
+
+.iconbox{
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    font-size: 32px;
+    border-radius: 100px;
+    left: -10px;
+
+}
+
+
+
+
+.procedure{
+    margin-top: -55px;
+}
+
